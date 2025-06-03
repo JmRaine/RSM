@@ -72,7 +72,11 @@ body {
 }
 
 .products {
-  flex: 1; /* Fill left column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 80vh;
 }
 
 .menu, .calculator {
@@ -115,6 +119,26 @@ button {
 
 button:hover {
   background-color: #bbb;
+}
+
+#selectedItems {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+#clearSelectedBtn {
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#clearSelectedBtn:hover {
+    background-color: #d32f2f;
 }
 
 /* Responsive (mobile) */
